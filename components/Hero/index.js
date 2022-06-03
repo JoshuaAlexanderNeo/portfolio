@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import TypewriterComponent from 'typewriter-effect'
 import Button from '../Button'
+
 const Hero = () => {
   return (
     <div>
@@ -41,14 +42,16 @@ const Hero = () => {
             />
           </div>
           <div className='mt-10'>
-            <Button buttonStyle={'rounded'}>
-              <span className='flex items-center'>
-                <svg className='fill-current w-4 h-4 mr-2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'>
-                  <path d='M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z' />
-                </svg>
-                Download Resume
-              </span>
-            </Button>
+            <a href={'resume.pdf'} download>
+              <Button buttonStyle={'rounded'}>
+                <span className='flex items-center'>
+                  <svg className='fill-current w-4 h-4 mr-2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'>
+                    <path d='M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z' />
+                  </svg>
+                  Download Resume
+                </span>
+              </Button>
+            </a>
           </div>
         </div>
       </div>
