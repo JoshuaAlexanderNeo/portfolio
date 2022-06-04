@@ -23,7 +23,7 @@ const navLinks = pages.map((page) => (
 const Navbar = ({ menuOpen, setMenuOpen }) => (
   <div className='flex items-center justify-between p-4'>
     <div className='flex items-center'>
-      <span class='inline-flex w-14 h-14 lg:mt-4 border-black font-header font-bold text-xl justify-center items-center text-center text-front border-2 border-solid border-front rounded-full'>
+      <span className='inline-flex w-14 h-14 lg:mt-4 border-black font-header font-bold text-xl justify-center items-center text-center text-front border-2 border-solid border-front rounded-full'>
         JA
       </span>
     </div>
