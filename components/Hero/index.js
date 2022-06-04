@@ -25,9 +25,10 @@ const Hero = () => {
                   'Full-stack Developer',
                   'Proudly Canadian',
                   'React Enthusiast',
+                  'Computer Science Grad',
                   'TailwindCSS Lover',
                   'Node.Js Developer',
-                  'Javascript User',
+                  'Javascripter',
                   'Python Scripter',
                   'PostgreSQL Querier',
                   'Express.js Router',
@@ -35,7 +36,8 @@ const Hero = () => {
                   'Next.js Deployer',
                   'Docker Composer',
                   'Chess Player',
-                  'Human Being'
+                  'Human Being',
+                  'N̵̨͒y̵̹̑a̵͉͝r̴̛͚l̶̞̀a̶̟̚t̷͎͠h̴͍̋ȏ̶̜t̸͉͝e̸̝̊p̶̯̂'
                 ],
                 autoStart: true,
                 loop: true
