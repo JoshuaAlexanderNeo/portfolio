@@ -18,11 +18,12 @@ const Hero = () => {
       <div className='h-screen items-center flex -mt-24 ml-20 '>
         <div>
           <h1 className='text-7xl font-robotoCondensed font-bold'>Joshua Alexander</h1>
-          <div className='text-5xl font-play text-gray-800 font-light ml-1'>
+          <div className='text-5xl font-play text-gray-800 font-light ml-1 min-h-[100px]'>
             <TypewriterComponent
               options={{
                 strings: [
                   'Full-stack Developer',
+                  'Proudly Canadian',
                   'React Enthusiast',
                   'TailwindCSS Lover',
                   'Node.Js Developer',
@@ -34,12 +35,26 @@ const Hero = () => {
                   'Next.js Deployer',
                   'Docker Composer',
                   'Chess Player',
-                  'Canadian'
+                  'Human Being'
                 ],
                 autoStart: true,
                 loop: true
               }}
             />
+          </div>
+
+          <div className='flex items-center'>
+            <svg
+              className='max-h-10'
+              focusable='false'
+              ariaHidden='true'
+              viewBox='0 0 24 24'
+              dataTestid='LocationOnIcon'
+              tabindex='-1'
+              title='LocationOn'>
+              <path d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'></path>
+            </svg>
+            <div className='font-cardo mt-3 italic text-2xl'>Tbilisi, Georgia</div>
           </div>
           <div className='mt-10'>
             <a href={'resume.pdf'} download>

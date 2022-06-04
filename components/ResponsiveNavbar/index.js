@@ -10,11 +10,11 @@ export const ResponsiveNavBar = () => {
   )
 }
 
-const pages = ['Home', 'About', 'Portfolio']
+const pages = ['Home', 'Education', 'Experience', 'Portfolio', 'Contact']
 const navLinks = pages.map((page) => (
   <a
     key={page}
-    className='no-underline text-gray-600 md:text-gray-50 font-semibold hover:text-gray-300'
+    className='no-underline text-gray-600 lg:text-gray-50 font-semibold hover:text-gray-300 '
     href={`#${page}`}>
     {page}
   </a>
@@ -23,23 +23,23 @@ const navLinks = pages.map((page) => (
 const Navbar = ({ menuOpen, setMenuOpen }) => (
   <div className='flex items-center justify-between p-4'>
     <div className='flex items-center'>
-      <a href='#home' className='text-xl font-bold no-underline  text-gray-800 hover:text-gray-600'>
-        Joshua Alexander
-      </a>
+      <span class='inline-flex w-14 h-14 lg:mt-4 border-black font-header font-bold text-xl justify-center items-center text-center text-front border-2 border-solid border-front rounded-full'>
+        JA
+      </span>
     </div>
-    <nav className='hidden md:block space-x-6'>{navLinks}</nav>
+    <nav className='hidden lg:block space-x-6'>{navLinks}</nav>
     <button
       type='button'
       aria-label='Toggle mobile menu'
       onClick={() => setMenuOpen(!menuOpen)}
-      className='rounded md:hidden focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-50'>
+      className='rounded lg:hidden focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-50'>
       <MenuAlt4Svg menuOpen={menuOpen} />
     </button>
   </div>
 )
 
 const MobileMenu = ({ children }) => (
-  <nav className='p-4 flex flex-col absolute w-screen space-y-6 md:hidden bg-white'>{children}</nav>
+  <nav className='p-4 flex flex-col absolute w-screen space-y-6 lg:hidden bg-white'>{children}</nav>
 )
 
 const MenuAlt4Svg = ({ menuOpen }) => (
