@@ -5,7 +5,8 @@ module.exports = {
       fontFamily: {
         robotoCondensed: ['Roboto Condensed'],
         play: ['Play'],
-        cardo: ['Cardo']
+        cardo: ['Cardo'],
+        yanone: ['Yanone Kaffeesatz']
       },
       transitionProperty: {
         height: 'height'

@@ -13,6 +13,7 @@ export default function Home() {
           rel='stylesheet'></link>
         <link href='https://fonts.googleapis.com/css2?family=Play&display=swap' rel='stylesheet'></link>
         <link href='https://fonts.googleapis.com/css2?family=Cardo&display=swap' rel='stylesheet'></link>
+        <link href='https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap' rel='stylesheet'></link>
       </Head>
       <ResponsiveNavBar />
       <Hero />
