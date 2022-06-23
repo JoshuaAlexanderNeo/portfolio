@@ -59,7 +59,7 @@ const Hero = () => {
             <div className='font-robotoCondensed mt-3 italic text-3xl'>Tbilisi, Georgia</div>
           </div>
           <div className='mt-10'>
-            <a href={'resume.pdf'} download>
+            <a href={'Joshua_Alexander.pdf'} download>
               <Button buttonStyle={'rounded'}>
                 <span className='flex items-center'>
                   <svg className='fill-current w-4 h-4 mr-2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'>

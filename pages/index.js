@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { ResponsiveNavBar } from '../components/ResponsiveNavbar'
 import Hero from '../components/Hero'
+import Experience from '../components/Experience'
 export default function Home() {
   return (
     <div>
@@ -17,6 +18,7 @@ export default function Home() {
       </Head>
       <ResponsiveNavBar />
       <Hero />
+      <Experience />
     </div>
   )
 }
