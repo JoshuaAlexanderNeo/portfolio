@@ -35,7 +35,7 @@ const LeftBox = ({ company, title, date }) => {
 
 const Experience = () => {
   return (
-    <div className='container mx-auto w-full h-full'>
+    <div id='History' className='container mx-auto w-full h-full'>
       <div className='flex justify-center text-5xl mb-10 font-semibold font-robotoCondensed'>History</div>
       <div className='relative wrap overflow-hidden  h-full'>
         <div
