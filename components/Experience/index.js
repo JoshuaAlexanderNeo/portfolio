@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 
 const RightBox = ({ company, title, date }) => {
   return (
@@ -11,7 +10,7 @@ const RightBox = ({ company, title, date }) => {
       <div className='order-1 w-5/12 px-6 py-4 '>
         <h3 className='mb-1 font-bold text-gray-800 text-sm sm:text-xl'>{company}</h3>
         <h2 className='mb-1 text-gray-800 text-xs sm:text-base'>{title}</h2>
-        <h1 className='font-light text-gray-400 text-xs sm:text-base'>{date}</h1>
+        <h1 className='font-light text-gray-500 text-xs sm:text-base'>{date}</h1>
       </div>
     </div>
   )
@@ -27,7 +26,7 @@ const LeftBox = ({ company, title, date }) => {
       <div className='order-1 w-5/12 justify-center px-4 py-4'>
         <h3 className='mb-1 font-bold text-gray-800 flex justify-end text-sm sm:text-xl'>{company}</h3>
         <h2 className='mb-1 text-gray-800 flex justify-end text-xs sm:text-base'>{title}</h2>
-        <h1 className='font-light text-gray-400 flex justify-end text-xs sm:text-base'>{date}</h1>
+        <h1 className='font-light text-gray-500 flex justify-end text-xs sm:text-base'>{date}</h1>
       </div>
     </div>
   )
