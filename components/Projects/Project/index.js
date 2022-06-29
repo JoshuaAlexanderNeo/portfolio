@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Project = ({ tagList, title, description, github, site, image }) => {
   return (
     <div className='container mx-auto w-full h-full'>
-      <div className='py-1 dark:bg-gray-800 dark:text-gray-50'>
+      <div className='py-1'>
         <a
           className='grid grid-cols-1 overflow-hidden bg-white border border-gray-100 rounded-lg group sm:grid-cols-8'
           href=''>
