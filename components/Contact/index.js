@@ -59,7 +59,7 @@ const Contact = () => {
             </div>
           </div>
           {state?.succeeded ? (
-            <div className='flex justify-center items-center'>Thanks for contacting me! I'll be in touch</div>
+            <div className='flex justify-center items-center'>Thanks for contacting me! I‘ll be in touch</div>
           ) : (
             <form
               onSubmit={handleSubmit}

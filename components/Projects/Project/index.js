@@ -15,9 +15,11 @@ const Project = ({ tagList, title, description, github, site, image }) => {
           <div className='p-8 sm:col-span-6'>
             <ul className='flex space-x-1'>
               {tagList &&
-                tagList.map((tag) => {
+                tagList.map((tag, key) => {
                   return (
-                    <li className='inline-block px-3 py-1 text-xs font-semibold text-white bg-blue-500 rounded-full'>
+                    <li
+                      key={key}
+                      className='inline-block px-3 py-1 text-xs font-semibold text-white bg-blue-500 rounded-full'>
                       {tag}
                     </li>
                   )
