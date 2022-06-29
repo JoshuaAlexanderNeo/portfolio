@@ -12,7 +12,6 @@ const Projects = () => {
           'This is the website you are currently on! It is created soley by me with TailwindCSS and NextJs to showcase my work'
         }
         github={'https://github.com/JoshuaAlexanderNeo/portfolio'}
-        site={'https://github.com/JoshuaAlexanderNeo/portfolio'}
         image={'portfolio-website.png'}
       />
 
