@@ -35,9 +35,7 @@ const Hero = () => {
                   'Git Committer',
                   'Next.js Deployer',
                   'Docker Composer',
-                  'Chess Player',
-                  'Human Being',
-                  'N̵̨͒y̵̹̑a̵͉͝r̴̛͚l̶̞̀a̶̟̚t̷͎͠h̴͍̋ȏ̶̜t̸͉͝e̸̝̊p̶̯̂'
+                  'Strapi CMSer'
                 ],
                 autoStart: true,
                 loop: true
@@ -49,7 +47,7 @@ const Hero = () => {
             <svg
               className='max-h-10'
               focusable='false'
-              ariaHidden='true'
+              aria-hidden='true'
               viewBox='0 0 24 24'
               tabIndex='-1'
               title='LocationOn'>
