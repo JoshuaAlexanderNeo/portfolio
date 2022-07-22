@@ -4,8 +4,9 @@ import Hero from '../components/Hero'
 import Experience from '../components/Experience'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
+import About from '../components/About'
 
-export default function Home() {
+export default function Home({ jsonData }) {
   return (
     <div>
       <Head>
@@ -16,10 +17,20 @@ export default function Home() {
       <ResponsiveNavBar />
       <Hero />
       <div className='bg-gradient-to-b from-white to-blue-50'>
+        <About quote={jsonData} />
         <Experience />
         <Projects />
         <Contact />
       </div>
     </div>
   )
+}
+
+export async function getServerSideProps() {
+  const response = await fetch('https://programming-quotes-api.herokuapp.com/Quotes/random')
+  const jsonData = await response.json()
+  console.log('RESPONSE', response)
+  return {
+    props: { jsonData }
+  }
 }

@@ -10,6 +10,7 @@ export default function Document() {
         <link href='https://fonts.googleapis.com/css2?family=Play&display=swap' rel='stylesheet'></link>
         <link href='https://fonts.googleapis.com/css2?family=Cardo&display=swap' rel='stylesheet'></link>
         <link href='https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap' rel='stylesheet'></link>
+        <link href='https://fonts.googleapis.com/css2?family=Playball&display=swap' rel='stylesheet'></link>
       </Head>
       <body>
         <Main />

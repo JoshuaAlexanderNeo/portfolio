@@ -6,7 +6,8 @@ module.exports = {
         robotoCondensed: ['Roboto Condensed'],
         play: ['Play'],
         cardo: ['Cardo'],
-        yanone: ['Yanone Kaffeesatz']
+        yanone: ['Yanone Kaffeesatz'],
+        playball: ['Playball']
       },
       transitionProperty: {
         height: 'height'
