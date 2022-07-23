@@ -1,7 +1,6 @@
 import React from 'react'
 
 const About = ({ quote }) => {
-  console.log(quote)
   return (
     <section id='About Me' className='container mx-auto w-1/2 h-full mt-28'>
       <div className='flex justify-center text-5xl mb-10 font-semibold font-robotoCondensed'>About Me</div>

@@ -5,6 +5,7 @@ import Experience from '../components/Experience'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import About from '../components/About'
+import Footer from '../components/Footer'
 
 export default function Home({ jsonData }) {
   return (
@@ -16,11 +17,12 @@ export default function Home({ jsonData }) {
       </Head>
       <ResponsiveNavBar />
       <Hero />
-      <div className='bg-gradient-to-b from-white to-blue-50'>
+      <div className='bg-gradient-to-b from-white to-blue-50 -z-30'>
         <About quote={jsonData} />
         <Experience />
         <Projects />
         <Contact />
+        <Footer />
       </div>
     </div>
   )
@@ -29,7 +31,6 @@ export default function Home({ jsonData }) {
 export async function getServerSideProps() {
   const response = await fetch('https://programming-quotes-api.herokuapp.com/Quotes/random')
   const jsonData = await response.json()
-  console.log('RESPONSE', response)
   return {
     props: { jsonData }
   }
