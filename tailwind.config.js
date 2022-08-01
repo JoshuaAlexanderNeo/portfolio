@@ -3,11 +3,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        cardo: ['Cardo', 'serif'],
-        robotoCondensed: ['"Roboto Condensed"', 'sans-serif'],
-        playball: ['Playball', 'cursive'],
-        play: ['Play', 'sans-serif'],
-        yanone: ['"Yanone Kaffeesatz"', 'sans-serif']
+        cardo: ['Cardo'],
+        robotoCondensed: ['"Roboto Condensed"'],
+        play: ['Play'],
+        yanone: ['"Yanone Kaffeesatz"'],
+        playball: ['Playball']
       },
       transitionProperty: {
         height: 'height'
