@@ -4,10 +4,10 @@ module.exports = {
     extend: {
       fontFamily: {
         cardo: ['Cardo', 'serif'],
-        robotoCondensed: ['"Roboto Condensed"', 'sans-serif'],
+        robotoCondensed: ['Roboto Condensed', 'sans-serif'],
         playball: ['Playball', 'cursive'],
         play: ['Play', 'sans-serif'],
-        yanone: ['"Yanone Kaffeesatz"', 'sans-serif']
+        yanone: ['Yanone Kaffeesatz', 'sans-serif']
       },
       transitionProperty: {
         height: 'height'
