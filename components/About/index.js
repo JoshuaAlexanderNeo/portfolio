@@ -1,8 +1,8 @@
 import React from 'react'
 
-const About = ({ quote }) => {
+const About = () => {
   return (
-    <section id='About Me' className='container mx-auto w-1/2 h-full mt-28'>
+    <section id='About Me' className='container mx-auto w-1/2 h-full my-28'>
       <div className='flex justify-center text-5xl mb-10 font-semibold font-robotoCondensed'>About Me</div>
       <div className='flex'>
         <div>
@@ -13,9 +13,6 @@ const About = ({ quote }) => {
             I&apos;m also a big fan of the open-source community, and I&apos;m always looking to contribute to open-source projects. I also like writing small Python scripts to automate small tasks,
             crawl websites, and other small projects.
           </p>
-
-          <div className='font-playball text-2xl mt-12'>{quote.en}</div>
-          <div className='italic mb-12'> - {quote.author}</div>
         </div>
       </div>
     </section>

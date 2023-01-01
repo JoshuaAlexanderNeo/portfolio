@@ -18,7 +18,7 @@ export default function Home({ jsonData }) {
       <ResponsiveNavBar />
       <Hero />
       <div className='bg-gradient-to-b from-white to-blue-50 -z-30'>
-        <About quote={jsonData} />
+        <About/>
         <Experience />
         <Projects />
         <Contact />
@@ -28,10 +28,3 @@ export default function Home({ jsonData }) {
   )
 }
 
-export async function getServerSideProps() {
-  const response = await fetch('https://programming-quotes-api.herokuapp.com/Quotes/random')
-  const jsonData = await response.json()
-  return {
-    props: { jsonData }
-  }
-}
