@@ -3,7 +3,7 @@ import Project from './Project'
 
 const Projects = () => {
   return (
-    <div id='Projects' className='container mx-auto w-full h-full mt-28'>
+    <div id='Projects' className='container mx-auto w-full h-full mt-56'>
       <div className='flex justify-center text-5xl mb-10 font-semibold font-robotoCondensed'>Projects</div>
       <Project
         tagList={['Next.js', 'React', 'TailwindCSS']}
