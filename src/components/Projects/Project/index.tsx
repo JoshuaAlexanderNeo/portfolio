@@ -34,7 +34,7 @@ const Project: React.FC<ProjectProps> = ({ tagList, title, description, github, 
                 })}
             </ul>
 
-            <h5 className='mt-4 font-bold'>{title}</h5>
+            <h5 className='mt-4 font-bold dark:text-gray-100'>{title}</h5>
 
             <div className='mt-2 text-sm text-gray-500 dark:text-gray-300'>{description}</div>
 

@@ -41,7 +41,7 @@ const LeftBox: React.FC<ExperienceItemProps> = ({ company, title, date }) => {
 const Experience: React.FC = () => {
   return (
     <div id='History' className='container mx-auto w-full h-full'>
-      <div className='flex justify-center text-5xl mb-10 font-semibold font-robotoCondensed'>History</div>
+      <div className='flex justify-center text-5xl mb-10 font-semibold font-robotoCondensed dark:text-gray-100'>History</div>
       <div className='relative wrap overflow-hidden h-full'>
         <div
           className='absolute border-opacity-20 border-gray-900 h-full border-2-2 border dark:border-gray-200'

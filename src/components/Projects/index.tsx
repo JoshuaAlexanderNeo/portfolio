@@ -4,7 +4,7 @@ import Project from './Project'
 const Projects: React.FC = () => {
   return (
     <div id='Projects' className='container mx-auto w-full h-full mt-56'>
-      <div className='flex justify-center text-5xl mb-10 font-semibold font-robotoCondensed'>Projects</div>
+      <div className='flex justify-center text-5xl mb-10 font-semibold font-robotoCondensed dark:text-gray-100'>Projects</div>
       <Project
         tagList={['Next.js', 'React', 'TailwindCSS']}
         title={'Personal Portfolio Website'}

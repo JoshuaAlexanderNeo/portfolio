@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
   const [state, handleSubmit] = useForm('mnqwyolp')
   return (
     <>
-      <div id='Contact' className='container mx-auto w-full h-full mt-28'>
+      <div id='Contact' className='container mx-auto w-full h-full mt-28 dark:text-gray-100'>
         <section className='py-6'>
           <div className='grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x'>
             <div className='py-6 md:py-0 md:px-6'>
@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
                   type='email'
                   name='email'
                   placeholder='email@email.com'
-                  className='block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-blue-400 dark:bg-slate-800 p-2'
+                  className='block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-blue-400 dark:bg-slate-800 p-2 dark:text-gray-100 dark:placeholder-gray-300'
                 />
                 <ValidationError prefix='Email' field='email' errors={state.errors} />
                 <label className='block'>
@@ -92,7 +92,7 @@ const Contact: React.FC = () => {
                   id='message'
                   name='message'
                   rows={5}
-                  className='block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-blue-400 dark:bg-slate-800 p-2'></textarea>
+                  className='block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-blue-400 dark:bg-slate-800 p-2 dark:placeholder-gray-300'></textarea>
                 <ValidationError prefix='Message' field='message' errors={state.errors} />
                 <button
                   type='submit'

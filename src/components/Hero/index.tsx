@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
           quality={100}
         />
       </div>
-      <div className='h-screen items-center flex -mt-24 ml-20 '>
+      <div className='h-screen items-center flex -mt-24 ml-20 text-black dark:text-white'>
         <div>
           <h1 className='sm:text-8xl text-6xl font-yanone '>Joshua Alexander</h1>
           <div className='text-4xl font-robotoCondensed text-gray-800 font-light ml-1 min-h-[100px]'>
