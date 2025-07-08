@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer: React.FC = () => {
   return (
-    <div className='h-40 relative'>
+    <div className='relative'>
       <div className='w-full h-full z-20 block '>
         <Image
           alt='background'

@@ -2,32 +2,52 @@
 
 import React, { useState } from 'react'
 
+const smoothScrollTo = (elementId: string) => {
+
+  const element = document.getElementById(elementId)
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+
+    })
+  }
+}
+
 export const ResponsiveNavBar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
+  
+  const handleNavClick = (page: string) => {
+    smoothScrollTo(page)
+    setMenuOpen(false) // Close mobile menu after clicking
+  }
+
+  const navLinks = pages.map((page) => (
+    <button
+      key={page}
+      className='no-underline text-gray-600 lg:text-gray-50 font-semibold hover:text-gray-300 dark:text-black bg-transparent border-none cursor-pointer'
+      onClick={() => handleNavClick(page)}>
+      {page}
+    </button>
+  ))
+
   return (
     <div className='bg-transparent '>
-      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} navLinks={navLinks} />
       {menuOpen && <MobileMenu>{navLinks}</MobileMenu>}
     </div>
   )
 }
 
 const pages: string[] = ['About Me', 'History', 'Projects', 'Contact']
-const navLinks = pages.map((page) => (
-  <a
-    key={page}
-    className='no-underline text-gray-600 lg:text-gray-50 font-semibold hover:text-gray-300 dark:text-black'
-    href={`#${page}`}>
-    {page}
-  </a>
-))
 
 interface NavbarProps {
   menuOpen: boolean
   setMenuOpen: (open: boolean) => void
+  navLinks: React.ReactNode[]
 }
 
-const Navbar: React.FC<NavbarProps> = ({ menuOpen, setMenuOpen }) => (
+const Navbar: React.FC<NavbarProps> = ({ menuOpen, setMenuOpen, navLinks }) => (
   <div className='flex items-center justify-between p-4'>
     <div className='flex items-center'>
       <span className='inline-flex w-14 h-14 lg:mt-4 border-black font-header font-bold text-xl justify-center items-center text-center text-front border-2 border-solid border-front rounded-full dark:border-white'>
