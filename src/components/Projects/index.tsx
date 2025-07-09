@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
       />
 
       <Project
-        tagList={['Javascript', 'React', 'TailwindCSS']}
+        tagList={['Javascript', 'React', 'Vite']}
         title={'Dominions 6 Pretender Calculator'}
         description={
           'I migrated this open source project from Create-React-App to Vite and overhauled the UI to make it more usable.'
