@@ -24,6 +24,15 @@ const Projects: React.FC = () => {
         github={'https://github.com/JoshuaAlexanderNeo/Lichess2Chess'}
         image={'/lichess2chess.png'}
       />
+
+      <Project
+        tagList={['Typescript', 'Next.js']}
+        title={'Solo DnD Gamemaster Emulator'}
+        description={'This is a Solo DnD Gamemaster Emulator that allows you to play Dungeons and Dragons by yourself. Launching shortly!'}
+        github={'https://github.com/JoshuaAlexanderNeo/SoloDnD'}
+        site='https://mythic-gme-2.vercel.app/'
+        image={'/mythic-gme.png'}
+      />
     </div>
   )
 }
