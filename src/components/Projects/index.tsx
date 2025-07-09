@@ -16,12 +16,13 @@ const Projects: React.FC = () => {
       />
 
       <Project
-        tagList={['Javascript', 'Firefox Addon', 'Chrome Extension']}
+        tagList={['Javascript', 'Browser Extension']}
         title={'Lichess2Chess'}
         description={
           'This is a browser extension to convert Lichess Glicko ratings to Chess.com ELO ratings. Does regressions from data from for each main chess category (Classical, Blitz, Rapid, and Bullet) and displays your equivalent Chess.com rating in Green beside your Lichess.org rating. Supports both Firefox and Chrome.'
         }
         github={'https://github.com/JoshuaAlexanderNeo/Lichess2Chess'}
+        site={'https://chromewebstore.google.com/detail/lichess2chess/mdjhjmefckhheleoegfcobijefkpfppo'}
         image={'/lichess2chess.png'}
       />
 
@@ -33,6 +34,18 @@ const Projects: React.FC = () => {
         site='https://mythic-gme-2.vercel.app/'
         image={'/mythic-gme.png'}
       />
+
+      <Project
+        tagList={['Javascript', 'React', 'TailwindCSS']}
+        title={'Dominions 6 Pretender Calculator'}
+        description={
+          'I migrated this open source project from Create-React-App to Vite and overhauled the UI to make it more usable.'
+        }
+        github={'https://github.com/zollqir/pretenders-dom6'}
+        site={'https://zollqir.github.io/pretenders-dom6/'}
+        image={'/dominions-6.png'}
+      />
+
     </div>
   )
 }

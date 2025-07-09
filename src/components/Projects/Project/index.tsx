@@ -38,7 +38,7 @@ const Project: React.FC<ProjectProps> = ({ tagList, title, description, github, 
 
             <div className='mt-2 text-sm text-gray-500 dark:text-gray-300'>{description}</div>
 
-            <div className='mt-4 flex divide-x-2'>
+            <div className='mt-4 flex'>
               {github && (
                 <Link href={github}>
                   <div
