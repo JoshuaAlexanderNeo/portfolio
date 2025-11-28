@@ -60,11 +60,11 @@ const Hero: React.FC = () => {
 							<path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
 						</svg>
 						<div className="font-robotoCondensed mt-3 italic text-3xl">
-							Tbilisi, Georgia
+							Lethbridge, Alberta, Canada
 						</div>
 					</div>
 					<div className="mt-10">
-						<a href={"Joshua_Alexander.pdf"} download>
+						<a href={"Joshua_Alexander_21_10_2025.pdf"} download>
 							<Button buttonStyle={"rounded"} onClick={() => {}}>
 								<span className="flex items-center">
 									<svg
