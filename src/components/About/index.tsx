@@ -37,8 +37,10 @@ const About: React.FC = () => {
 						that help people enjoy these hobbies, and I have a few projects in
 						the works that I hope to release soon.
 						<br />
-						<br />I am currently living in Tbilisi, Georgia for the past several
-						years working remotely as Full Stack Developer.
+						<br />
+						I am currently living in Lethbridge, Alberta after living in
+						Tbilisi, Georgia for the past several years working remotely as a 
+						Full Stack Developer.
 					</p>
 				</div>
 			</div>
